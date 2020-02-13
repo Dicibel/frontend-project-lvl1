@@ -1,6 +1,8 @@
-language: node_js
-node_js:
-          - node
+name: Node_js CI
 
-script:
-          - make lint
+on: [push]
+
+jobs:
+     build:
+           steps:
+           - run make lint
