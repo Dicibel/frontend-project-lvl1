@@ -28,6 +28,7 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jest": "^23.7.0",
     "lodash": "^4.17.15",
-    "readline-sync": "^1.4.10"
+    "readline-sync": "^1.4.10",
+    "typescript": "^3.7.5"
   }
 }
