@@ -1,6 +1,7 @@
 name: Node_js CI
 
-on: [push]
+on: 
+  - push
 
 jobs:
      build:
