@@ -1,12 +1,6 @@
-name: CI
+language: node_js
+node_js:
+          - node
 
-on: [push]
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Run linter
-      run:  make lint
+script:
+          - make lint
