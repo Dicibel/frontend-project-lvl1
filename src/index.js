@@ -20,12 +20,11 @@ const rulesOfGames = (game, description) => {
     if (answer === correctAnswer) {
       console.log('Correct!');
       gamesCounter += 1;
-  }
-    else {
+    } else {
       console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${userName}!`);
       break;
-  }
-  } while (gamesCounter < 3)
+    }
+  } while (gamesCounter < 3);
 
   if (gamesCounter === 3) {
     console.log(`Congratulations, ${userName}!`);
