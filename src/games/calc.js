@@ -3,27 +3,31 @@ import rulesOfGames from '../index.js';
 
 const operations = ['+', '-', '*'];
 const description = 'What is the result of the expression?';
-const questionAndAnswer = () => {
+const getQuestionAndAnswer = () => {
   const firstNumber = randomNumber(0, 10);
   const secondNumber = randomNumber(0, 10);
-  const randomOperations = operations[randomNumber(0, 2)];
-  const question = `${firstNumber} ${randomOperations} ${secondNumber}`;
-  let correctAnswer;
+  const numberOfOperations = operations.length;
+  const randomOperation = operations[randomNumber(0, numberOfOperations - 1)];
+  const question = `${firstNumber} ${randomOperation} ${secondNumber}`;
+  let equality;
 
-  switch (randomOperations) {
+  switch (randomOperation) {
     case '+':
-      correctAnswer = String(firstNumber + secondNumber);
+      equality = firstNumber + secondNumber;
       break;
     case '-':
-      correctAnswer = String(firstNumber - secondNumber);
+      equality = firstNumber - secondNumber;
+      break;
+    case '*':
+      equality = firstNumber * secondNumber;
       break;
     default:
-      correctAnswer = String(firstNumber * secondNumber);
+      break;
   }
-
+  const correctAnswer = String(equality);
   return [question, correctAnswer];
 };
 
-const callCalc = () => rulesOfGames(questionAndAnswer, description);
+const callCalc = () => rulesOfGames(getQuestionAndAnswer, description);
 
 export default callCalc;
