@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import randomNumber from '../lib/lib.js';
 import rulesOfGames from '../index.js';
 

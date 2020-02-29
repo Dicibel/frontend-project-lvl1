@@ -1,6 +1,3 @@
-import randomNumber from '../lib/lib.js';
-import rulesOfGames from '../index.js';
-
 const description = 'What number is missing in the progression?';
 const questionAndAnswer = () => {
   const firstSymbol = randomNumber(0, 100);
