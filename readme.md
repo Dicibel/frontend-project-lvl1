@@ -1,6 +1,6 @@
 ## frontend-project-lvl-1
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/877eca8267838344d4b1/maintainability)](https://codeclimate.com/github/Dicibel/frontend-project-lvl1/maintainability)
 
 ![Node_js CI](https://github.com/Dicibel/frontend-project-lvl1/workflows/Node_js%20CI/badge.svg)
 
