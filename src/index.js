@@ -7,12 +7,11 @@ export const greeting = () => {
 };
 
 const rulesOfGames = (game, description) => {
-  let gamesCounter = 0;
-  const maxGames = 3;
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(`${description}`);
+  let gamesCounter = 0;                                                                                                                                                   const maxGames = 3; 
   for (gamesCounter; gamesCounter < maxGames; gamesCounter += 1) {
     const [question, correctAnswer] = game();
     console.log(`Question: ${question}`);
