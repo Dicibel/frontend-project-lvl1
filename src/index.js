@@ -11,7 +11,8 @@ const rulesOfGames = (game, description) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(`${description}`);
-  let gamesCounter = 0;                                                                                                                                                   const maxGames = 3; 
+  let gamesCounter = 0;
+  const maxGames = 3;
   for (gamesCounter; gamesCounter < maxGames; gamesCounter += 1) {
     const [question, correctAnswer] = game();
     console.log(`Question: ${question}`);
