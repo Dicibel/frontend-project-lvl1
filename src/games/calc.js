@@ -22,7 +22,7 @@ const getQuestionAndAnswer = () => {
       equality = firstNumber * secondNumber;
       break;
     default:
-      break;
+      return null;
   }
   const correctAnswer = String(equality);
   return [question, correctAnswer];

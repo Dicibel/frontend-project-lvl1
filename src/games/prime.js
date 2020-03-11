@@ -2,7 +2,7 @@ import randomNumber from '../lib/lib.js';
 import rulesOfGames from '../index.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const questionAndAnswer = () => {
+const getQuestionAndAnswer = () => {
   const question = randomNumber(1, 100);
   let correctAnswer;
   if (question < 2) {
@@ -19,5 +19,5 @@ const questionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-const callPrime = () => rulesOfGames(questionAndAnswer, description);
+const callPrime = () => rulesOfGames(getQuestionAndAnswer, description);
 export default callPrime;

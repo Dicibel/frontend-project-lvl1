@@ -14,7 +14,7 @@ const isGCD = (number1, number2) => {
   return result;
 };
 
-const questionAndAnswer = () => {
+const getQuestionAndAnswer = () => {
   const firstNumber = randomNumber(0, 100);
   const secondNumber = randomNumber(0, 100);
   const question = `${firstNumber} ${secondNumber}`;
@@ -22,5 +22,5 @@ const questionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-const callGCD = () => rulesOfGames(questionAndAnswer, description);
+const callGCD = () => rulesOfGames(getQuestionAndAnswer, description);
 export default callGCD;
