@@ -1,14 +1,13 @@
-import randomNumber from '../lib/lib.js';
-import rulesOfGames from '../index.js';
+import getRandomNumber, { getProgressionElement } from '../lib/lib.js';
+import runGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
-const getProgressionElement = (start, step, i) => start + step * i;
 
 const getQuestionAndAnswer = () => {
-  const hiddenIndex = randomNumber(0, 9);
-  const progressionStep = randomNumber(1, 15);
+  const hiddenIndex = getRandomNumber(0, 9);
+  const progressionStep = getRandomNumber(1, 15);
   const progressionLength = 10;
-  const progressionStart = randomNumber(0, 100);
+  const progressionStart = getRandomNumber(0, 100);
   const correctAnswer = getProgressionElement(progressionStart, progressionStep, hiddenIndex);
   const stack = [];
   for (let i = 0; i < progressionLength; i += 1) {
@@ -23,5 +22,5 @@ const getQuestionAndAnswer = () => {
   return [question, String(correctAnswer)];
 };
 
-const callProgression = () => rulesOfGames(getQuestionAndAnswer, description);
-export default callProgression;
+const playProgression = () => runGame(getQuestionAndAnswer, description);
+export default playProgression;

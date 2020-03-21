@@ -1,1 +1,17 @@
-export default (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+export default getRandomNumber;
+
+export const getProgressionElement = (start, step, i) => start + step * i;
+
+export const isEven = (number) => (number % 2 === 0 ? 'yes' : 'no');
+
+export const isGCD = (number1, number2) => {
+  const int = number1 > number2 ? number2 : number1;
+  let result;
+  for (let i = 1; i <= int; i += 1) {
+    if (number1 % i === 0 && number2 % i === 0) {
+      result = i;
+    }
+  }
+  return result;
+};

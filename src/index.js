@@ -6,7 +6,7 @@ export const greeting = () => {
   console.log(`Hello, ${userName}!`);
 };
 
-const rulesOfGames = (game, description) => {
+const runGame = (game, description) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
@@ -29,4 +29,4 @@ const rulesOfGames = (game, description) => {
   }
 };
 
-export default rulesOfGames;
+export default runGame;

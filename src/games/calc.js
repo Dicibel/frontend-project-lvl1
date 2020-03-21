@@ -1,13 +1,13 @@
-import randomNumber from '../lib/lib.js';
-import rulesOfGames from '../index.js';
+import getRandomNumber from '../lib/lib.js';
+import runGame from '../index.js';
 
 const operations = ['+', '-', '*'];
 const description = 'What is the result of the expression?';
 const getQuestionAndAnswer = () => {
-  const firstNumber = randomNumber(0, 10);
-  const secondNumber = randomNumber(0, 10);
+  const firstNumber = getRandomNumber(0, 10);
+  const secondNumber = getRandomNumber(0, 10);
   const numberOfOperations = operations.length;
-  const randomOperation = operations[randomNumber(0, numberOfOperations - 1)];
+  const randomOperation = operations[getRandomNumber(0, numberOfOperations - 1)];
   const question = `${firstNumber} ${randomOperation} ${secondNumber}`;
   let equality;
 
@@ -28,6 +28,6 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-const callCalc = () => rulesOfGames(getQuestionAndAnswer, description);
+const playCalc = () => runGame(getQuestionAndAnswer, description);
 
-export default callCalc;
+export default playCalc;
