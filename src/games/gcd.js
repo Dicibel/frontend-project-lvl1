@@ -1,4 +1,4 @@
-import getRandomNumber, { isGCD } from '../lib/lib.js';
+import { getRandomNumber, isGCD } from '../lib/utils.js';
 import runGame from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';

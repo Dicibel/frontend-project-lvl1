@@ -1,4 +1,4 @@
-import getRandomNumber, { getProgressionElement } from '../lib/lib.js';
+import { getRandomNumber, getProgressionElement } from '../lib/utils.js';
 import runGame from '../index.js';
 
 const description = 'What number is missing in the progression?';

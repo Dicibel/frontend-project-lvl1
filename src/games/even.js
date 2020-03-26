@@ -1,4 +1,4 @@
-import getRandomNumber, { isEven } from '../lib/lib.js';
+import { getRandomNumber, isEven } from '../lib/utils.js';
 import runGame from '../index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no"';

@@ -1,5 +1,4 @@
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
-export default getRandomNumber;
+export const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
 export const getProgressionElement = (start, step, i) => start + step * i;
 

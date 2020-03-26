@@ -1,4 +1,4 @@
-import getRandomNumber from '../lib/lib.js';
+import {getRandomNumber} from '../lib/utils.js';
 import runGame from '../index.js';
 
 const operations = ['+', '-', '*'];
