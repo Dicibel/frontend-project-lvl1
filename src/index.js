@@ -13,18 +13,21 @@ const runGame = (getGameInfo, description) => {
   console.log(`${description}`);
   let gamesCounter = 0;
   const maxGames = 3;
-  for (gamesCounter; gamesCounter < maxGames; gamesCounter += 1) {
+  while (gamesCounter < maxGames) {
     const [question, correctAnswer] = getGameInfo();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === correctAnswer) {
       console.log('Correct!');
+      gamesCounter += 1;
     } else {
-      console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\nLet's try again, ${userName}!`);
-      break;
+      console.log(`"${answer}" is wrong answer ;(.`);
+      console.log(`Correct answer was "${correctAnswer}"!`);
+      console.log(`Let's try again, ${userName}!`);
+      gamesCounter = 4;
     }
   }
-  if (gamesCounter === 3) {
+  if (gamesCounter === maxGames) {
     console.log(`Congratulations, ${userName}!`);
   }
 };

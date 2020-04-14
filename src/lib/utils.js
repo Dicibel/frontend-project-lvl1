@@ -2,7 +2,7 @@ export const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - m
 
 export const getProgressionElement = (start, step, i) => start + step * i;
 
-export const isEven = (number) => (number % 2 === 0 ? 'yes' : 'no');
+export const isEven = (number) => number % 2 === 0;
 
 export const isGCD = (number1, number2) => {
   const int = number1 > number2 ? number2 : number1;
@@ -13,4 +13,15 @@ export const isGCD = (number1, number2) => {
     }
   }
   return result;
+};
+export const isPrime = (number) => {
+  if (number < 2) {
+    return false;
+  }
+  for (let i = 2; i <= number / 2; i += 1) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
 };
