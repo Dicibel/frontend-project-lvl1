@@ -4,7 +4,7 @@ export const getProgressionElement = (start, step, i) => start + step * i;
 
 export const isEven = (number) => number % 2 === 0;
 
-export const isGCD = (number1, number2) => {
+export const getGCD = (number1, number2) => {
   const int = number1 > number2 ? number2 : number1;
   let result;
   for (let i = 1; i <= int; i += 1) {
@@ -14,6 +14,7 @@ export const isGCD = (number1, number2) => {
   }
   return result;
 };
+
 export const isPrime = (number) => {
   if (number < 2) {
     return false;

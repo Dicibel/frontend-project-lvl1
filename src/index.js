@@ -24,7 +24,7 @@ const runGame = (getGameInfo, description) => {
       console.log(`"${answer}" is wrong answer ;(.`);
       console.log(`Correct answer was "${correctAnswer}"!`);
       console.log(`Let's try again, ${userName}!`);
-      gamesCounter = 4;
+      return;
     }
   }
   if (gamesCounter === maxGames) {

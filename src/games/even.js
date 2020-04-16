@@ -3,7 +3,9 @@ import runGame from '../index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no"';
 const getQuestionAndAnswer = () => {
-  const question = getRandomNumber(0, 100);
+  const minRandomNumber = 0;
+  const maxRandomNumber = 100;
+  const question = getRandomNumber(minRandomNumber, maxRandomNumber);
   const correctAnswer = isEven(question);
   return [question, correctAnswer];
 };
