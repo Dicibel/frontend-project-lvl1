@@ -6,7 +6,7 @@ const getQuestionAndAnswer = () => {
   const minRandomNumber = 0;
   const maxRandomNumber = 100;
   const question = getRandomNumber(minRandomNumber, maxRandomNumber);
-  const correctAnswer = isEven(question);
+  const correctAnswer = isEven(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
