@@ -11,15 +11,15 @@ const runGame = (getGameInfo, description) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(`${description}`);
-  let gamesCounter = 0;
-  const maxGames = 3;
-  while (gamesCounter < maxGames) {
+  let gameCounter = 0;
+  const maxGameNumber = 3;
+  while (gameCounter < maxGameNumber) {
     const [question, correctAnswer] = getGameInfo();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === correctAnswer) {
       console.log('Correct!');
-      gamesCounter += 1;
+      gameCounter += 1;
     } else {
       console.log(`"${answer}" is wrong answer ;(.`);
       console.log(`Correct answer was "${correctAnswer}"!`);
@@ -27,9 +27,7 @@ const runGame = (getGameInfo, description) => {
       return;
     }
   }
-  if (gamesCounter === maxGames) {
-    console.log(`Congratulations, ${userName}!`);
-  }
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default runGame;

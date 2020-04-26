@@ -1,7 +1,9 @@
-import { getRandomNumber, getProgressionElement } from '../lib/utils.js';
+import getRandomNumber from '../lib/utils.js';
 import runGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
+
+const getProgressionElement = (start, step, i) => start + step * i;
 
 const getQuestionAndAnswer = () => {
   const minHiddenIndex = 0;
@@ -15,15 +17,15 @@ const getQuestionAndAnswer = () => {
   const maxProgressionStart = 100;
   const progressionStart = getRandomNumber(minProgressionStart, maxProgressionStart);
   const correctAnswer = getProgressionElement(progressionStart, progressionStep, hiddenIndex);
-  const stack = [];
+  const progressionElements = [];
   for (let i = 0; i < progressionLength; i += 1) {
     const currentElement = hiddenIndex === i
       ? '..'
       : getProgressionElement(progressionStart, progressionStep, i);
-    stack.push(currentElement);
+    progressionElements.push(currentElement);
   }
   const separator = ' ';
-  const question = stack.join(separator);
+  const question = progressionElements.join(separator);
 
   return [question, String(correctAnswer)];
 };

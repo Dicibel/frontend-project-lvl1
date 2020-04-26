@@ -4,31 +4,29 @@
 
 ![Node_js CI](https://github.com/Dicibel/frontend-project-lvl1/workflows/Node_js%20CI/badge.svg)
 
+The package provides a collection mathematical mini-games that run in the console. This is the first training project from the Hexlet team.
+
 ## How to install game-collection
-
 To install the game collection execute the following command with administrator rights:
-[![asciicast](https://asciinema.org/a/SxSyg9yzHmWTZ0ZgHdOROQ83S.svg)](https://asciinema.org/a/SxSyg9yzHmWTZ0ZgHdOROQ83S)
-
-## Greeting
-
-[![asciicast](https://asciinema.org/a/3ZYYcuQDyKfTfZi8j9Ur5MA5r.svg)](https://asciinema.org/a/3ZYYcuQDyKfTfZi8j9Ur5MA5r)
-
+```
+npm link
+```
 ## Game "brain-even"
-
-[![asciicast](https://asciinema.org/a/ypSQxa980nYSrDcqyienQRlTx.svg)](https://asciinema.org/a/ypSQxa980nYSrDcqyienQRlTx)
+Say "yes" if the number is even, otherwise "no":
+[![asciicast](https://asciinema.org/a/xrZWaGbYd664e92d9SKO4QppS.svg)](https://asciinema.org/a/xrZWaGbYd664e92d9SKO4QppS)
 
 ## Game "brain-calc"
-
-[![asciicast](https://asciinema.org/a/hoZWL1IbtSTIS5JWnZQMykzV8.svg)](https://asciinema.org/a/hoZWL1IbtSTIS5JWnZQMykzV8)
+Calculate the mathematical expression:
+[![asciicast](https://asciinema.org/a/loIWjYX3teTRwZOYCD9A6aiG7.svg)](https://asciinema.org/a/loIWjYX3teTRwZOYCD9A6aiG7)
 
 ## Game "brain-gcd"
-
-[![asciicast](https://asciinema.org/a/O85LKHYl7WLe9U3PD8cjg0QrW.svg)](https://asciinema.org/a/O85LKHYl7WLe9U3PD8cjg0QrW)
+Find the greatest common divisor of given numbers:
+[![asciicast](https://asciinema.org/a/ZZ22wD2NyiAB14bRfRaaztvdL.svg)](https://asciinema.org/a/ZZ22wD2NyiAB14bRfRaaztvdL)
 
 ## Game "brain-progression"
-
-[![asciicast](https://asciinema.org/a/GE0SWh1614OsXGqgEd3wFzUxS.svg)](https://asciinema.org/a/GE0SWh1614OsXGqgEd3wFzUxS)
+Find the missing number in the number row.
+[![asciicast](https://asciinema.org/a/O7eie2gE0fjrQ92hrPyPjPLGX.svg)](https://asciinema.org/a/O7eie2gE0fjrQ92hrPyPjPLGX)
 
 ## Game "brain-prime"
-
-[![asciicast](https://asciinema.org/a/ASWJZbOQMWWTLuYaCqIIEfTab.svg)](https://asciinema.org/a/ASWJZbOQMWWTLuYaCqIIEfTab)
+Say "yes" if the number is prime, otherwise "no".
+[![asciicast](https://asciinema.org/a/0bf5yoztA0BFAUvdTSTb5rB4j.svg)](https://asciinema.org/a/0bf5yoztA0BFAUvdTSTb5rB4j)
